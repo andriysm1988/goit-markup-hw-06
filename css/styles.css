@@ -135,6 +135,7 @@ h1,h2,h3,h4,h5,h6,ul,p {
 }
 
 .site-nav .link {
+    position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -143,7 +144,7 @@ h1,h2,h3,h4,h5,h6,ul,p {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em; 
-    position: relative;
+    
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -333,9 +334,6 @@ h1,h2,h3,h4,h5,h6,ul,p {
     padding-bottom: 0px;
 }
 
-.section-title.features {
-    display: none;
-}
 
 .feature-list {
     display: flex;
@@ -1072,18 +1070,33 @@ textarea::placeholder {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover .info-field, .form-field:hover .modal-icon {
-    border-color: var(--accent-color);
+
+.form-field:focus-within .modal-icon, .form-field:focus-within .info-field {
     fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.form-field:hover .info-field, .form-field:hover .modal-icon {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 
 
-.info-field:focus + .modal-icon, .info-field:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+
+.checkbox-icon {
     
-} 
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+
+}
+
+
+    
+
 
 
 
