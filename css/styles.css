@@ -739,6 +739,7 @@ p {
   border-radius: 4px;
   margin-right: 12px;
   padding-left: 16px;
+  outline: none;
 
   background-color: transparent;
 
@@ -918,6 +919,7 @@ p {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 
 .form-field {
@@ -1015,6 +1017,7 @@ textarea::placeholder {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  outline: none;
 }
 
 .agreements:checked + .checkbox-icon {
